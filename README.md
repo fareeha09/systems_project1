@@ -17,8 +17,8 @@ by Fareeha Tabassum
 	
 * function.c *Handles every function such as parsing, executing, etc.*
 	* /*======== char * parse_space() ==========
-	* Inputs: char * str (the command)
-	* Returns: an array of strings of the command after parsing 
+		* Inputs: char * str (the command)
+		* Returns: an array of strings of the command after parsing 
 
 	* Takes one argument from fgets which is the command to be executed
 	* ex. cd ..
