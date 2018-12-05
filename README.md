@@ -10,11 +10,7 @@ by Fareeha Tabassum
 - [ ] pipes :(	
 ### Attempted (I'll add stuff here tmrw when I've completed it to the best of my ability):
 	
-### Bugs :
-	Putting two ;'s next to each other will break the parser
-	Redirecting to a file that does not exist occasionally does not work.
-	Hair regrowth function may result in a seg fault.
-	Occasionally, the unicorn command will fail, opening a great chasm in the earth and summoning the demon Beelzebub, who will proceeded to unleash his wrath and begin his reign of terror.
+### Bugs (I'll add stuff here tmrw when I've completed it to the best of my ability):
 	
 ### Files & Function Headers:
 main.c
