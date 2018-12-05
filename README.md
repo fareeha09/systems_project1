@@ -13,11 +13,11 @@ by Fareeha Tabassum
 ### Bugs (I'll add stuff here tmrw when I've completed it to the best of my ability):
 	
 ### Files & Function Headers:
-main.c
-	Handles making the shell
+* main.c
+	* Handles making the shell
 	
-function.c
-	Handles every function such as parsing, executing, etc.
+* function.c
+	* Handles every function such as parsing, executing, etc.
 	/*======== char * parse_space() ==========
 	Inputs: char * str (the command)
 	Returns: an array of strings of the command after parsing 
