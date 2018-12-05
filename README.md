@@ -20,32 +20,32 @@ by Fareeha Tabassum
 		* Inputs: char * str (the command)
 		* Returns: an array of strings of the command after parsing 
 
-	* Takes one argument from fgets which is the command to be executed
-	* ex. cd ..
-	* Parses that command at any space, 
-	* puts it in an array,
-	* and returns the array
+		* Takes one argument from fgets which is the command to be executed
+		* ex. cd ..
+		* Parses that command at any space, 
+		* puts it in an array,
+		* and returns the array
 	* ====================*/
 
 	* /*======== char ** parse_semicolon() ==========
-	* Inputs:  char * str (the commands including the ;)
-	* Returns: an array of strings of the seperate commands after parsing 
+		* Inputs:  char * str (the commands including the ;)
+		* Returns: an array of strings of the seperate commands after parsing 
 
-	* Takes one argument from fgets which is the command to be executed
-	* ex. cd ..
-	* Parses that command at semicolon, 
-	* puts it in an array,
-	* and returns the array
+		* Takes one argument from fgets which is the command to be executed
+		* ex. cd ..
+		* Parses that command at semicolon, 
+		* puts it in an array,
+		* and returns the array
 	* ====================*/
 
 	* /*======== char * execute() ==========
-	* Inputs:  char ** arr
-	* Returns: a char pointer
+		* Inputs:  char ** arr
+		* Returns: a char pointer
 
-	* Takes one argument which is an array of the command the user puts in
-	* if it's cd or exit, it just does it.
-	* it it's any other command it execs
-	* returns a char pointer idk why
+		* Takes one argument which is an array of the command the user puts in
+		* if it's cd or exit, it just does it.
+		* it it's any other command it execs
+		* returns a char pointer idk why
 	* ====================*/
 
 ### What I've learned:
