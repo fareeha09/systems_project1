@@ -5,7 +5,7 @@ by Fareeha Tabassum
   That working alone sucks
 
 ## Features:
-	- [ ] Forks and executes commands!
+- [ ] Forks and executes commands!
 	Parses multiple commands on one line!
 	Redirects using >, <!
 	Guaranteed to regrow hair!
