@@ -18,7 +18,7 @@ by Fareeha Tabassum
 	
 * function.c
 	* Handles every function such as parsing, executing, etc.
-	/*======== char * parse_space() ==========
+	/*======== char * parse_space() ==========*/
 	Inputs: char * str (the command)
 	Returns: an array of strings of the command after parsing 
 
