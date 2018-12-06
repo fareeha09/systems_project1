@@ -7,11 +7,14 @@ by Fareeha Tabassum
 - [x] fork and exec other commands work
 - [x] Parses multiple commands on one line with ; works 
 - [ ] Redirects using >, <
-- [ ] pipes :(	
-### Attempted (I'll add stuff here tmrw when I've completed it to the best of my ability):
-	
-### Bugs (I'll add stuff here tmrw when I've completed it to the best of my ability):
-	
+- [ ] pipes 
+
+### Attempted, but not completely succeeded:
+* Basic Redirection - everything works until you get to the dup2 part
+* pipes
+
+### Bugs:
+* Basic Redirection is forever looping
 ### Files & Function Headers:
 * main.c *Handles making the shell*
 	
@@ -46,6 +49,28 @@ by Fareeha Tabassum
 		* if it's cd or exit, it just does it.
 		* it it's any other command it execs
 		* returns a char pointer idk why
+	* ====================*/
+		* /*======== char * redirout() ==========
+		* Inputs:  char * str
+		* Returns: a char pointer
+		
+		* Takes one argument from fgets which is the command to be executed
+		* ex. ls>hoo.c
+		* Parses that command at >, 
+		* puts it in an array,
+		* does dup and redirects it
+		* returns a pointer to str
+	* ====================*/
+		* /*======== char * redirin() ==========
+		* Inputs:  char * str
+		* Returns: a char pointer
+
+		* Takes one argument from fgets which is the command to be executed
+		* ex. ls<hoo.c
+		* Parses that command at <, 
+		* puts it in an array,
+		* does dup and redirects it
+		* returns a pointer to str
 	* ====================*/
 
 ### What I've learned:
