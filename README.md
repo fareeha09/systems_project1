@@ -2,10 +2,10 @@
 by Fareeha Tabassum
 
 ### Features:
-- [x] reads commands and parses with space
+- [x] Reads commands and parses with space
 - [x] cd and exit works
 - [x] fork and exec other commands work
-- [x] Parses multiple commands on one line 
+- [x] Parses multiple commands on one line with ; works 
 - [ ] Redirects using >, <
 - [ ] pipes :(	
 ### Attempted (I'll add stuff here tmrw when I've completed it to the best of my ability):
