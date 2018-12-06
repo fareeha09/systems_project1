@@ -75,4 +75,3 @@ by Fareeha Tabassum
 
 ### What I've learned:
   * That working alone sucks
-  * To never fall behind cuz then I won't understand anything and will hand in the project late and cry inside
