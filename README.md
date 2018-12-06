@@ -3,9 +3,9 @@ by Fareeha Tabassum
 
 ### Features:
 - [x] reads commands and parses with space
-- [x] cd and exit works (except you need an extra space which I will attempt tmrw
-- [x] fork and exec other commands kind of
-- [ ] Parses multiple commands on one line --> I'm getting there jfejrlfjr
+- [x] cd and exit works
+- [x] fork and exec other commands work
+- [x] Parses multiple commands on one line 
 - [ ] Redirects using >, <
 - [ ] pipes :(	
 ### Attempted (I'll add stuff here tmrw when I've completed it to the best of my ability):
