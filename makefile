@@ -1,10 +1,10 @@
 all: main.o functions.o functions.h
-	gcc -o test main.o
-
-main.o: main.c functions.h
+	gcc -o test main.o functions.o
+	
+main.o: main.c
 	gcc -c main.c
 
-functions.o: functions.c functions.h
+functions.o: functions.c
 	gcc -c functions.c
 	
 run:
@@ -12,6 +12,7 @@ run:
 	
 clean:
 	rm *.o
+	./test
 	
 	
    

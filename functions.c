@@ -9,6 +9,22 @@
 
 /*Takes one argument from fgets which is the command to be executed
 	ex. cd ..
+	Parses that command at semicolon, 
+	puts it in an array,
+	and returns the array*/
+char ** parse_semicolon(char *str){
+	char ** array = malloc(100);
+	int i=0;
+	while(str){
+		char * h = strsep(&str, ";");
+		array[i]= h;
+		i++;
+	}
+	return array;
+}
+
+/*Takes one argument from fgets which is the command to be executed
+	ex. cd ..
 	Parses that command at any space, 
 	puts it in an array,
 	and returns the array*/
@@ -24,21 +40,6 @@ char ** parse_space(char * str){
 	return array;
 }
 
-/*Takes one argument from fgets which is the command to be executed
-	ex. cd ..
-	Parses that command at semicolon, 
-	puts it in an array,
-	and returns the array*/
-char ** parse_semicolon(char *str){
-	char ** array = malloc(100);
-	int i=0;
-	while(str){
-		char * h = strsep(&str, ";");
-		array[i]= h;
-		i++;
-	}
-	return array;
-}
 
 /*Takes one argument which is an array of the command the user puts in
 	if it's cd or exit, it just does it.
@@ -49,7 +50,7 @@ char * execute(char ** arr){
 	//cd AND exit ARE ONLY WORKING WHEN I'M ADDING A SPACE AFTER EX. 'cd .. '
 	// if command is exit
 	if (!strcmp(arr[0], "exit")){
-		printf("exiting\n");
+		printf("exiting...\n");
 		exit(EXIT_SUCCESS); //WHY IS IT NOT EXITINGNNG			
 	}
 	
