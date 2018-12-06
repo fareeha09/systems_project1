@@ -50,7 +50,7 @@ by Fareeha Tabassum
 		* it it's any other command it execs
 		* returns a char pointer idk why
 	* ====================*/
-		* /*======== char * redirout() ==========
+	* /*======== char * redirout() ==========
 		* Inputs:  char * str
 		* Returns: a char pointer
 		
@@ -61,7 +61,7 @@ by Fareeha Tabassum
 		* does dup and redirects it
 		* returns a pointer to str
 	* ====================*/
-		* /*======== char * redirin() ==========
+	* /*======== char * redirin() ==========
 		* Inputs:  char * str
 		* Returns: a char pointer
 
