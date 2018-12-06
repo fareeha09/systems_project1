@@ -7,6 +7,7 @@
 #include <sys/wait.h>
 #include "functions.h"
 
+
 /*Takes one argument from fgets which is the command to be executed
 	ex. cd ..
 	Parses that command at semicolon, 
@@ -73,3 +74,55 @@ char * execute(char ** arr){
 		}
 	}
 }
+
+/*Takes one argument from fgets which is the command to be executed
+	ex. ls>hoo.c
+	Parses that command at >, 
+	puts it in an array,
+	does dup and redirects it
+	returns a pointer to str*/
+char * redirout(char * str){
+	char ** array = malloc(100);
+	int i=0;
+				
+	while(str){
+		array[i]= strsep(&str, ">");
+		i++;
+	}
+	
+	int stdout = 1;
+	// printf("array[1]:%s\n", array[1]);
+	int fd = open(array[1], O_CREAT | O_WRONLY, 0666);
+	dup2(fd, stdout); //KEEPS DOING A FOREVER LOOP IDK WHY
+	close(fd);
+	
+	printf("hello2\n");
+	
+	return str;
+}
+
+/*Takes one argument from fgets which is the command to be executed
+	ex. ls<hoo.c
+	Parses that command at <, 
+	puts it in an array,
+	does dup and redirects it
+	returns a pointer to str*/
+char * redirin(char * str){
+	char ** array = malloc(100);
+	int i=0;
+				
+	while(str){
+		array[i]= strsep(&str, "<");
+		i++;
+	}
+	
+	int stdin = 0;
+	int fd = open(array[1], O_CREAT | O_WRONLY, 0666);
+	dup2(fd, stdin); //KEEPS DOING A FOREVER LOOP IDK WHY
+	close(fd);
+	
+	//printf("hello2\n");
+	
+	return str;
+}
+

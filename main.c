@@ -7,6 +7,7 @@
 #include <sys/wait.h>
 #include "functions.h"
 
+
 int main(){
 
   // printf("SHELL\n");
@@ -26,17 +27,24 @@ int main(){
 		char str[100];
 		fgets(str, 100, stdin);
 		str[strlen(str) - 1] = '\0';
-		
-		char ** arr0 = parse_semicolon(str);
-		
-		for (int i=0; arr0[i]; i++){
-			char ** arr = parse_space(str);
-			strcpy(str, arr0[i]);
-			//printf("arr[0]: %s, arr[1]: %s\n", arr[0], arr[1]);
-			execute(arr);
+			
+		if (strstr(str, ">")){
+			redirout(str);
+		}
+		else if (strstr(str, ">")){
+			redirin(str);
+		}
+		else {
+			char ** arr0 = parse_semicolon(str);
+			
+			for (int i=0; arr0[i]; i++){
+				char ** arr = parse_space(str);
+				strcpy(str, arr0[i]);
+				//printf("arr[0]: %s, arr[1]: %s\n", arr[0], arr[1]);
+				execute(arr);
+			}
 		}
 	} 
-	
 	return 0;
   
 }
